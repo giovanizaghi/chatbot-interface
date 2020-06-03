@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="Content/Site.css" type="text/css" rel="stylesheet" />
+    <link href="Content/jet-carousel.css" type="text/css" rel="stylesheet" />
+    <link href="Content/slick.css" type="text/css" rel="stylesheet" />
+    <link href="Content/slick-theme.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="chat">
+        <div class="cabecalhoChat">
+            Atendimento BOT
+        </div>
+        <div class="corpoChat">
+            <div class="jet-carousel">
+                <div class="item-details">
+                    <img src="https://d2giyh01gjb6fi.cloudfront.net/default/0001/83/thumb_82896_default_big.jpeg" width="100%"/>
+                    <h1>Moto Z2 Play</h1>
+                    <h2>Aqui fica a descrição do produto</h2>
+                    <h3>R$1322,00</h3>
+                </div>
+                <div class="item-details">
+                    <img src="http://thumbs.buscape.com.br/__600x600-PU9bc35_6.jpg?v=2704339933" width="100%"/>
+                    <h1>Zenfone 4 Max</h1>
+                    <h2>Aqui fica a descrição do produto</h2>
+                    <h3>R$1200,00</h3>
+                </div>                
+            </div>
+        </div>
+        <input type="text" id="txtMsg" class="textBoxChat"/>
+        <button class="btnEnviarMsg" onclick="AddMessageUser($('#txtMsg').val())"></button>
+    </div>7
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>    
+    <script src="Scripts/interfaceTest.js"></script>
+    <script src="Scripts/custom.js"></script>
+    <script src="Scripts/slick.min.js"></script>
+    <script>
+        $('.jet-carousel').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+        });
+    </script>
+</body>
+</html>

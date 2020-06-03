@@ -1,0 +1,75 @@
+.jet-carousel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 5px;
+    position: relative;
+}
+
+.item-details{
+    border: solid 1px #0000001f;
+    border-radius: 5px;    
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    height: 90% !important;
+}
+
+.item-details img{
+    width: 70%;    
+    margin-left: 20%;
+}
+
+.item-details h1{
+    font-size: 1vw;   
+    color: #0374ff;
+    font-weight: bold; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.item-details h2{
+    font-size: 0.9vw;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.item-details h3{
+    font-size: 1.5vw;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.left, .right{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #dedede9c;
+    margin-top: 20%;
+    border-radius: 50px;
+    border: 0;
+    outline-width: 0;
+    background-size: 25% 25%;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+.left{    
+    left: calc(100% - 50px);
+    background-image: url('../img/arrow-left.png');
+}
+.right{
+    left: 0;
+    background-image: url('../img/arrow-right.png');
+}
+
+.left:hover, .right:hover{
+    background-color: #ababab9c;
+}
+
+.left:active, .right:active{
+    background-color: #5050509c;
+}
+
